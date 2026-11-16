@@ -4,6 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Felicidad en Colombia — World Happiness Report 2025</title>
+<meta name="description" content="Análisis de los factores que explican el bienestar subjetivo en Colombia según el World Happiness Report 2025, comparado con el mundo y Latinoamérica.">
+<meta name="author" content="Santiago Ariza, Hillary Feria, Leonel Almanza, Victor Julio">
+<meta name="theme-color" content="#05080f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Felicidad en Colombia — World Happiness Report 2025">
+<meta property="og:description" content="¿Qué explica el bienestar de los colombianos? Comparación con los países más y menos felices, países de su rango y Latinoamérica.">
+<meta property="og:image" content="img/paises/colombia.jpg">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -389,6 +400,13 @@ footer{
   margin:0 0 32px 0;
 }
 
+/* ═══ UTILIDADES ═══ */
+.section--tight{padding-top:0}
+.hl{color:var(--text)}
+.hl-gold{color:var(--gold)}
+.vars-intro{margin-bottom:28px;padding:32px 36px}
+.vars-intro p{color:#c8d4f0;line-height:1.9;font-size:15px;text-align:justify}
+
 /* ═══ ANIMACIONES DE ENTRADA ═══ */
 .fade-up{
   opacity:1;
@@ -402,6 +420,11 @@ footer{
 .fade-up.animate.visible{
   opacity:1;
   transform:translateY(0);
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .fade-up,.fade-up.animate{opacity:1;transform:none;transition:none}
+  .hero-orb,.hero-badge::before,.scroll-hint{animation:none}
 }
 </style>
 </head>
@@ -419,11 +442,11 @@ footer{
   <p class="hero-sub">Análisis de los factores que determinan el bienestar subjetivo de los colombianos y su posición en el panorama global</p>
 
   <div class="hero-score">
-    <div class="score-num">5.63</div>
+    <div class="score-num">6.0</div>
     <div class="score-divider"></div>
     <div class="score-label">
       <strong>Ladder Score</strong>
-      <em>Posición #64</em>
+      <em>Posición #61 de 147</em>
     </div>
     <div class="score-divider"></div>
     <div class="score-label">
@@ -442,13 +465,13 @@ footer{
 <section class="section">
   <div class="wrap">
     <div class="fade-up">
-      <p class="section-title">¿Qué mide el<br><span>Happiness Report?</span></p>
+      <h2 class="section-title">¿Qué mide el<br><span>Happiness Report?</span></h2>
       <div class="sep"></div>
     </div>
     <div class="intro-grid fade-up">
       <div class="card intro-card">
         <h3>📊 Sobre el índice</h3>
-        <p>El bienestar subjetivo constituye un indicador esencial del desarrollo humano. El World Happiness Report evalúa la felicidad de los países mediante el <strong style="color:var(--text)">Ladder Score</strong>, una medida basada en la percepción que las personas tienen sobre su calidad de vida. Este índice integra factores económicos, sociales, institucionales y culturales.</p>
+        <p>El bienestar subjetivo constituye un indicador esencial del desarrollo humano. El World Happiness Report evalúa la felicidad de los países mediante el <strong class="hl">Ladder Score</strong>, una medida basada en la percepción que las personas tienen sobre su calidad de vida. Este índice integra factores económicos, sociales, institucionales y culturales.</p>
       </div>
       <div class="card intro-card">
         <h3>🇨🇴 Sobre Colombia</h3>
@@ -459,38 +482,38 @@ footer{
 </section>
 
 <!-- ═══ GALERÍA ═══ -->
-<section class="section" style="padding-top:0">
+<section class="section section--tight">
   <div class="wrap">
     <div class="fade-up">
-      <p class="section-title">Felicidad<br><span>alrededor del mundo</span></p>
+      <h2 class="section-title">Felicidad<br><span>alrededor del mundo</span></h2>
       <div class="sep"></div>
       <p class="section-desc">Contextos sociales contrastantes entre países con distintos niveles de bienestar, reflejando diferencias en estabilidad, cohesión social y calidad de vida.</p>
     </div>
     <div class="gallery fade-up">
 
       <div class="country-card">
-        <img src="felicidad_colombia.jpg" alt="Colombia" onerror="this.src='https://flagcdn.com/w320/co.png'">
-        <div class="country-name">Colombia <span class="country-rank">#64</span></div>
+        <img loading="lazy" src="img/paises/colombia.jpg" alt="Escena cotidiana en Colombia" onerror="this.src='https://flagcdn.com/w320/co.png'">
+        <div class="country-name">Colombia <span class="country-rank">#61</span></div>
       </div>
 
       <div class="country-card">
-        <img src="felicidad_argentina.jpg" alt="Argentina" onerror="this.src='https://flagcdn.com/w320/ar.png'">
-        <div class="country-name">Argentina <span class="country-rank">#52</span></div>
+        <img loading="lazy" src="img/paises/argentina.jpg" alt="Escena cotidiana en Argentina" onerror="this.src='https://flagcdn.com/w320/ar.png'">
+        <div class="country-name">Argentina <span class="country-rank">#42</span></div>
       </div>
 
       <div class="country-card">
-        <img src="Finlandia_felicidad.jpg" alt="Finlandia" onerror="this.src='https://flagcdn.com/w320/fi.png'">
+        <img loading="lazy" src="img/paises/finlandia.jpg" alt="Escena cotidiana en Finlandia" onerror="this.src='https://flagcdn.com/w320/fi.png'">
         <div class="country-name">Finlandia <span class="country-rank">#1</span></div>
       </div>
 
       <div class="country-card">
-        <img src="felicidad_islandia.jpg" alt="Islandia" onerror="this.src='https://flagcdn.com/w320/is.png'">
+        <img loading="lazy" src="img/paises/islandia.jpg" alt="Escena cotidiana en Islandia" onerror="this.src='https://flagcdn.com/w320/is.png'">
         <div class="country-name">Islandia <span class="country-rank">#3</span></div>
       </div>
 
       <div class="country-card">
-        <img src="tristeza_afghanistan.jpg" alt="Afganistán" onerror="this.src='https://flagcdn.com/w320/af.png'">
-        <div class="country-name">Afganistán <span class="country-rank">#143</span></div>
+        <img loading="lazy" src="img/paises/afganistan.jpg" alt="Escena cotidiana en Afganistán" onerror="this.src='https://flagcdn.com/w320/af.png'">
+        <div class="country-name">Afganistán <span class="country-rank">#147</span></div>
       </div>
 
     </div>
@@ -498,15 +521,15 @@ footer{
 </section>
 
 <!-- ═══ VARIABLES ═══ -->
-<section class="section" style="padding-top:0">
+<section class="section section--tight">
   <div class="wrap">
     <div class="fade-up">
-      <p class="section-title">Variables que<br><span>explican la felicidad</span></p>
+      <h2 class="section-title">Variables que<br><span>explican la felicidad</span></h2>
       <div class="sep"></div>
     </div>
-    <div class="card intro-card fade-up" style="margin-bottom:28px; padding:32px 36px;">
-      <p style="color:#c8d4f0; line-height:1.9; font-size:15px; text-align:justify;">
-        La felicidad de una nación no es producto del azar ni de un único factor aislado, es el resultado de una ecuación compleja donde interactúan la economía, las instituciones, la cultura y los lazos humanos. El <strong style="color:var(--text)">World Happiness Report</strong> descompone el bienestar subjetivo en siete dimensiones clave que, en conjunto, explican por qué algunas sociedades florecen mientras otras luchan por encontrar satisfacción en la vida cotidiana. Cada variable aporta una pieza distinta del rompecabezas: desde la capacidad material de un país para proveer a sus ciudadanos; hasta algo tan intangible, pero poderoso, como la confianza entre vecinos o la libertad de elegir el propio destino. Comprender estas dimensiones es indispensable para interpretar la posición de Colombia y entender qué aspectos impulsan su bienestar y cuáles representan sus mayores desafíos pendientes.
+    <div class="card intro-card vars-intro fade-up">
+      <p>
+        La felicidad de una nación no es producto del azar ni de un único factor aislado, es el resultado de una ecuación compleja donde interactúan la economía, las instituciones, la cultura y los lazos humanos. El <strong class="hl">World Happiness Report</strong> descompone el bienestar subjetivo en siete dimensiones clave que, en conjunto, explican por qué algunas sociedades florecen mientras otras luchan por encontrar satisfacción en la vida cotidiana. Cada variable aporta una pieza distinta del rompecabezas: desde la capacidad material de un país para proveer a sus ciudadanos; hasta algo tan intangible, pero poderoso, como la confianza entre vecinos o la libertad de elegir el propio destino. Comprender estas dimensiones es indispensable para interpretar la posición de Colombia y entender qué aspectos impulsan su bienestar y cuáles representan sus mayores desafíos pendientes.
       </p>
     </div>
     <div class="vars-grid fade-up">
@@ -522,10 +545,10 @@ footer{
 </section>
 
 <!-- ═══ ANÁLISIS ═══ -->
-<section class="section" style="padding-top:0">
+<section class="section section--tight">
   <div class="wrap">
     <div class="fade-up">
-      <p class="section-title">Análisis<br><span>por comparación</span></p>
+      <h2 class="section-title">Análisis<br><span>por comparación</span></h2>
       <div class="sep"></div>
     </div>
 
@@ -533,7 +556,7 @@ footer{
     <div class="card analysis-card fade-up">
       <div class="analysis-inner">
         <div class="analysis-img">
-          <img src="trend_of_Colombias_life_evaluation_over_the_years.png" alt="Tendencia histórica Colombia">
+          <img loading="lazy" src="img/graficas/tendencia_colombia.png" alt="Tendencia histórica Colombia">
         </div>
         <div class="analysis-text">
           <span class="analysis-label">Tendencia histórica</span>
@@ -547,7 +570,7 @@ footer{
     <div class="card analysis-card fade-up">
       <div class="analysis-inner reverse">
         <div class="analysis-img">
-          <img src="comparacion_con_los_peores_2024.png" alt="Colombia vs países menos felices">
+          <img loading="lazy" src="img/graficas/comparacion_menos_felices.png" alt="Colombia vs países menos felices">
         </div>
         <div class="analysis-text">
           <span class="analysis-label">Colombia vs. menos felices</span>
@@ -561,7 +584,7 @@ footer{
     <div class="card analysis-card fade-up">
       <div class="analysis-inner">
         <div class="analysis-img">
-          <img src="comparacion_con_los_mejores_2024.png" alt="Colombia vs países más felices">
+          <img loading="lazy" src="img/graficas/comparacion_mas_felices.png" alt="Colombia vs países más felices">
         </div>
         <div class="analysis-text">
           <span class="analysis-label">Colombia vs. más felices</span>
@@ -575,7 +598,7 @@ footer{
     <div class="card analysis-card fade-up">
       <div class="analysis-inner reverse">
         <div class="analysis-img">
-          <img src="comparación_con_los_de_su_rango.png" alt="Colombia vs países de su rango">
+          <img loading="lazy" src="img/graficas/comparacion_rango.png" alt="Colombia vs países de su rango">
         </div>
         <div class="analysis-text">
           <span class="analysis-label">Países similares</span>
@@ -589,7 +612,7 @@ footer{
     <div class="card analysis-card fade-up">
       <div class="analysis-inner">
         <div class="analysis-img">
-          <img src="comparacion_con_latinoamérica.png" alt="Colombia vs Latinoamérica">
+          <img loading="lazy" src="img/graficas/comparacion_latam.png" alt="Colombia vs Latinoamérica">
         </div>
         <div class="analysis-text">
           <span class="analysis-label">Contexto regional</span>
@@ -603,14 +626,14 @@ footer{
 </section>
 
 <!-- ═══ CONCLUSIONES ═══ -->
-<section class="section" style="padding-top:0">
+<section class="section section--tight">
   <div class="wrap">
     <div class="fade-up">
-      <p class="section-title"><span>Conclusiones</span></p>
+      <h2 class="section-title"><span>Conclusiones</span></h2>
       <div class="sep"></div>
     </div>
     <div class="conclusion-box fade-up">
-      <p>Colombia tiene muy buen producto interno bruto y apoyo social en comparación al resto de países de Latinoamérica, pero lo afecta la poca generosidad del país, la percepción de la corrupción y la expectativa de vida en comparación a los otros países, lo que nos hace ubicarnos en el <strong style="color:var(--gold)">puesto 7 de los 10 países evaluados</strong> en la gráfica regional. Sin embargo, en el contexto global, la fortaleza del tejido social colombiano y la alta percepción de libertad individual posicionan a Colombia de manera competitiva frente a economías con mayor PIB, demostrando que la felicidad no es únicamente un indicador económico sino profundamente humano.</p>
+      <p>Colombia tiene muy buen producto interno bruto y apoyo social en comparación al resto de países de Latinoamérica, pero lo afecta la poca generosidad del país, la percepción de la corrupción y la expectativa de vida en comparación a los otros países, lo que nos hace ubicarnos en el <strong class="hl-gold">puesto 7 de los 10 países evaluados</strong> en la gráfica regional. Sin embargo, en el contexto global, la fortaleza del tejido social colombiano y la alta percepción de libertad individual posicionan a Colombia de manera competitiva frente a economías con mayor PIB, demostrando que la felicidad no es únicamente un indicador económico sino profundamente humano.</p>
     </div>
   </div>
 </section>
@@ -626,26 +649,35 @@ footer{
       <div class="team-card"><div class="team-name">Victor Julio</div><div class="team-email">vijulio@utb.edu.co</div></div>
     </div>
     <p class="footer-source">
-      <strong style="color:var(--text)">Estudiantes Data Science · UTB 2026</strong><br>
-      Fuente de datos: <a href="https://www.worldhappiness.report/ed/2025/" target="_blank">World Happiness Report 2025</a>
+      <strong class="hl">Estudiantes Data Science · UTB 2026</strong><br>
+      Fuente de datos: <a href="https://www.worldhappiness.report/ed/2025/" target="_blank" rel="noopener noreferrer">World Happiness Report 2025</a>
     </p>
     <p class="footer-copy">© 2026 · Análisis académico con fines educativos</p>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Intersection Observer para animaciones de entrada
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('visible');
-      // stagger para children si los tien    }
-  });
-},{threshold:0.08});
+<script>
+// Animación de entrada: solo se activa si el navegador lo soporta
+// y el usuario no pidió reducir el movimiento.
+(() => {
+  const items = document.querySelectorAll('.fade-up');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
 
-document.querySelectorAll('.fade-up').forEach(el=>{
-  observer.observe(el);
-});
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  items.forEach((el) => {
+    el.classList.add('animate');
+    observer.observe(el);
+  });
+})();
 </script>
 </body>
 </html>
